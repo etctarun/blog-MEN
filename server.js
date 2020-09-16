@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
       description: "Test Description 1",
     },
   ];
-  res.render("articles/index", { article: article });
+  res.render("articles/index", { articles: articles });
 });
 
 app.use("/articles", articleRouter);
